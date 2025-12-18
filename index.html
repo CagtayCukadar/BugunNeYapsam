@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugünNeYapsam?</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Bugün Ne Yapsam?" class="logo-img">
+            </div>
+            <p class="tagline">Evinizdeki malzemelerle harikalar yaratın.</p>
+        </header>
+
+        <main>
+            <section id="pantry-section" class="panel">
+                <div class="panel-header">
+                    <h2>Mutfağınızda Neler Var?</h2>
+                    <p class="subtitle">Elinizdeki malzemeleri seçin, gerisini şefe bırakın.</p>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Malzeme ara..." autocomplete="off">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <div class="categories-nav" id="categories-nav">
+                    <!-- Categories will be injected here via JS -->
+                    <button class="cat-btn active" data-category="all">Tümü</button>
+                    <button class="cat-btn" data-category="vegetable">Sebze</button>
+                    <button class="cat-btn" data-category="meat">Et & Şarküteri</button>
+                    <button class="cat-btn" data-category="dairy">Süt & Kahvaltılık</button>
+                    <button class="cat-btn" data-category="pantry">Kiler & Baharat</button>
+                </div>
+
+                <div class="ingredients-grid" id="ingredients-grid">
+                    <!-- Ingredients items will be injected here -->
+                </div>
+
+                <div class="selected-ingredients-bar" id="selected-bar">
+                    <span>Seçilenler: <strong id="selected-count">0</strong></span>
+                    <button id="clear-btn" class="text-btn">Temizle</button>
+                </div>
+            </section>
+
+            <section id="recommendations-section" class="panel">
+                <div class="panel-header">
+                    <h2>Şefin Önerileri</h2>
+                    <p class="subtitle">Malzemelerinize en uygun tarifler.</p>
+                </div>
+
+                <div id="recipes-container" class="recipes-grid">
+                    <div class="empty-state">
+                        <div class="empty-icon">🍽️</div>
+                        <h3>Henüz bir seçim yapmadınız</h3>
+                        <p>Öneri almak için soldaki panelden en az bir malzeme seçin.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Chef's Assistant. Bon Appétit.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/recipes.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
