@@ -1,4 +1,4 @@
-# BugünNeYapsam? (What Should I Cook Today?)
+# BugünNeYapsam? (What Should I Cook Today?) BETA
 
 **BugünNeYapsam**, evinizdeki malzemelere göre size en uygun yemek tariflerini öneren akıllı bir mutfak asistanıdır. "Bugün ne pişirsem?" derdine son vermek için tasarlanmıştır.
 
@@ -26,3 +26,4 @@
 ## 📝 Lisans
 
 Bu proje kişisel kullanım için geliştirilmiştir.
+
